@@ -29,6 +29,7 @@ body{
     font-size: 1rem;
     padding: .35em 0;
     text-transform: uppercase;
+    
 }
 
 .realeses-name {
@@ -36,6 +37,11 @@ body{
     font-weight: 700;
     font-size: 1.6em;
     padding: .35em 0;
+   max-width: 200px;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
 }
 
 .realeses-price {
