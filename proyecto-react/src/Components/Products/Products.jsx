@@ -11,6 +11,7 @@ import { Context } from '../../Context';
 function Products(data){
   console.log(data)
   // {title, imgSrc, price, category}
+ 
   const{product,setProduct,cartProducts,setCartProducts}= useContext(Context)
  
   function addToCart(productData){

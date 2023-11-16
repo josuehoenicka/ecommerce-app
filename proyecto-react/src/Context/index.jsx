@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
 export const Context = createContext();
+import { useContext } from 'react';
 
 function ContextProvider({children}) {
 
@@ -13,6 +14,8 @@ console.log(children)
       </Context.Provider>
   )
 }
-export default ContextProvider;
+export default ContextProvider =() =>{
+    return useContext(Context)
+} ;
 
 
