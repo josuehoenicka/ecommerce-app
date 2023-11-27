@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Products.css";
-import { FaTimes } from "react-icons/fa";
 
 import { useContext } from "react";
 import { Context } from "../../Context";
@@ -10,19 +9,8 @@ import { AiOutlinePlus } from "react-icons/ai";
 function Products(data) {
 
 
-  const {setOpenProductDetail, setProductCard, setOpenCartAside, counter, setCounter, setOpenNotification, cartProducts, setCartProducts, productCard} = useContext(Context);
+  const {setOpenProductDetail, setProductCard, setOpenCartAside, counter, setCounter, cartProducts, setCartProducts} = useContext(Context);
 
-  useEffect(() => {
-    setIsInCart(cart.some((item) => item.id == data.id));
-  }, [cart, data]);
-
-  const toggleCart = () => {
-    if (isInCart) {
-      setCart((prevCart) => prevCart.filter((item) => item.id !== data.id));
-    } else {
-      setCart((prevCart) => [...prevCart, data]);
-    }
-  };
 
   const showProduct = (productData) => {
     setOpenProductDetail(true);
