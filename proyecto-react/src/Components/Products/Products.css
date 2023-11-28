@@ -8,20 +8,16 @@ body{
     width: 33em;
 }
 
+
 .realeses-img {
-    box-shadow: 0 0 .4em rgba(0, 0, 0, 0.5);
-    border-radius: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 14rem;
     height: 14rem;
     object-fit: cover;
 }
 
 .realases-products {
-    box-shadow: .3em .3em 2em rgba(0, 0, 0, 0.5);
-    background-color: #ececec;
-    padding: 2.6em 4.5em;
-    border-radius: 3em;
-    margin: 1.8em 0em;
+    padding: 1em 2em;
     cursor: pointer;
     position: relative;
 }
@@ -57,35 +53,23 @@ body{
     padding: .35em 0;
 }
 
-.add-icon, .remove-icon{
-    background-color: #981313;
-    width: 1.9em;
-    height: 2.8rem;
+.add-icon{
+    background-color: #fff;
+    width: 1.6rem;
+    height: 1.7rem;
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 900;
-    border-radius: 100%;
+    border-radius: 1rem;
     text-align: center;
+    margin: .3rem;
     padding: .1rem;
     right: 1.5rem;
+
     transition: all .3s;
 }
 
-.add-icon {
-    background-color: #38e538;
-    opacity: .8;
-}
-
-.remove-icon{
-    background-color: #e92f2f;
-    opacity: .8;
-}
-
-
-.add-icon:hover {
-    opacity: 1;
-}
-
-.remove-icon:hover{
-    opacity: 1;
+.add-icon:hover{
+    background-color: rgb(29, 209, 29);
+    color: #fff;
 }
